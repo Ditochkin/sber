@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+}
+
+/*    Header    */
+.header_logo {
+    height: 90px;
+}
+
+.nonstop {
+    padding: 20px 0 20px 30px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24p;
+}
+
+#container_logo {
+    position: relative;
+}
+
+#container_logo:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #d6d6d6;
+
+    top: 100%;
+    left: 0;
+
+    position: absolute;
+}
+
+/*    Huge text    */
+.huge_site_title {
+    margin: 120px auto 13vh;
+    text-align: center;
+
+}
+
+.big_text_title {
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.small_text_title {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/*    intermediate_header    */
+#intermediate_header_container {
+    max-width: fit-content;
+}
+
+.intermediate_header {
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+
+.intermediate_header_text {
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Montserrat', 'bold';
+}
+
+.wrap {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    width: 135px;
+  }
+
+.wrap:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 2px;
+    background-color: #cbcbcb;
+}
+
+.intermediate_header:hover .wrap:before {
+    transition: 0.2s;
+    background-color: #3a8043;
+}
+
+/*    'For who' list    */
+#list_of_studs_container {
+    max-width: fit-content;
+    margin-bottom: 13vh;
+}
+
+.list_of_studs {
+    display: flex;
+    max-width: 100%;
+}
+
+.stud {
+    margin: 0 6vw;
+    min-width: fit-content;
+}
+
+.list_of_studs_image {
+    margin: auto;
+}
+
+#list_of_studs_img1 {
+    height: 64px;
+    width: 64px;
+    background: url(../icons/list_of_studs_img1.svg);
+}
+
+#folder_stud:hover #list_of_studs_img1 {
+    transition: 0.2s;
+    background: url(../icons/list_of_studs_img1_hover.svg);
+}
+
+#list_of_studs_img2 {
+    height: 57px;
+    width: 65px;
+    background: url(../icons/list_of_studs_img2.svg);
+}
+
+#pocket_stud:hover #list_of_studs_img2 {
+    transition: 0.2s;
+    background: url(../icons/list_of_studs_img2_hover.svg);
+}
+
+#list_of_studs_img3 {
+    height: 64px;
+    width: 47px;
+    background: url(../icons/list_of_studs_img3.svg);
+}
+
+#pazzle_stud:hover #list_of_studs_img3 {
+    transition: 0.2s;
+    background: url(../icons/list_of_studs_img3_hover.svg);
+}
+
+.list_of_studs_text {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*   Direction list    */
+#list_of_direction_container {
+    margin-bottom: 40px;
+}
+
+.list_of_directions {
+    margin: 0 auto;
+    max-width: 85vw;
+    width: 100%;
+}
+
+.direction {
+    box-shadow: 0px 0px 30px #999999;
+    border-radius: 22px;
+    margin: 80px auto;
+    min-height: fit-content;
+}
+
+.direction_info {
+    display: flex;
+}
+
+.course_list {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 40px;
+    transition: 0.2s ease-out;
+}
+
+.direction_name {
+    margin: auto;
+    width: 30%;
+}
+
+.direction_description {
+    margin: auto;
+    width: 45%;
+    padding: 20px 0;
+}
+
+.direction_more_info {
+    margin: auto;
+    height: 50px;
+    width: 15%;
+    background-color: white;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    right: 100%;
+}
+
+.direction_more_info:hover {
+    color:#4da858;
+    transition: 0.2s;
+}
+
+/*   Direction list text    */
+.direction_name_text {
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.direction_description_text {
+    font-size: 18px;
+    margin: auto;
+}
+
+/*    Course list table    */
+table {
+    border-collapse: separate;
+    border-spacing: 3vw 5vh;
+    margin:auto;
+    width: 100%;
+}
+
+td {
+    height: 60px;
+    border-radius: 22px;
+    border: 2px solid #4da858;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #4da858;
+    transition: 0.2s;
+}
+
+.course_button {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.course_button:hover {
+    color: white;
+}
+
+/*    End page logo    */
+#end_page_logo {
+    position: relative;
+}
+
+#end_page_logo:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    
+    background-color: #d6d6d6;
+
+    top: 0%;
+    left: 0;
+
+    position: absolute;
+}
+
+
+
+
